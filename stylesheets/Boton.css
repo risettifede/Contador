@@ -1,0 +1,49 @@
+/* Estilos de los botones */
+button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  background-color: white;
+}
+
+/* Estilo del botón "Clic" */
+.boton-clic {
+  margin: 20px;
+  /* border-top-left-radius: 10px; */
+  background-color: white;
+  min-width: 110px;
+}
+
+/* Estilo del botón "Reiniciar" */
+.boton-reiniciar {
+  
+  background-color: white;
+  max-width: 110px;
+}
+
+/* Estilo del botón "Clic" al ser presionado */
+.boton-clic:active {
+  background-color: white;
+}
+
+/* Estilo del botón "Reiniciar" al ser presionado */
+.boton-reiniciar:active {
+  background-color: white;
+}
+
+/* Estilo sólido al pasar el cursor sobre los botones */
+.boton-clic:hover {
+  background-color: green;
+}
+
+.boton-reiniciar:hover {
+  background-color: red;
+}
+
+
+
