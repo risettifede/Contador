@@ -8,7 +8,7 @@ function App() {
   const [numClics, setNumClics] = useState(0);
 
   const manejarClic = () => {
-    setNumClics(numClics + 1);
+    setNumClics(numClics++);
   }
 
   const reiniciarContador = () => {
