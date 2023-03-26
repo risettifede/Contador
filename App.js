@@ -1,15 +1,18 @@
 import './App.css';
 import Boton from './components/Boton';
 import Contador from "./components/Contador"
+import { useState } from 'react';
 
 function App() {
 
+  const [numClics, setNumClics] = useState(0);
+
   const manejarClic = () => {
-    console.log("Clic");
+    setNumClics(numClics + 1);
   }
 
   const reiniciarContador = () => {
-    console.log("Reiniciar");
+    setNumClics(0);
   }
 
   return (
@@ -22,8 +25,7 @@ function App() {
         />
       </div>
       <div className="contenedor-count">
-        <Contador numClics="5"
-  
+        <Contador numClics={numClics}
          />
         <Boton
           texto="Clic"
